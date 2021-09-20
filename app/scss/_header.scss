@@ -1,0 +1,49 @@
+header {
+    background-color: $darkBlueIntro;
+
+    nav {
+        padding: 1.3rem 1rem;
+
+        @media (min-width: 40em) {
+            padding: 2.3rem 2rem;
+        }
+
+        @media (min-width: 63em) {
+            padding: 4.5rem 5rem;
+        }
+
+        .logo {
+
+            &__img {
+                display: block;
+                max-width: 5.18rem;
+
+                @media (min-width: 63em) {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .menu {
+            list-style: none;
+            gap: 1rem;
+
+            @media (min-width: 63em) {
+                gap: 3.5rem;
+            }
+
+            li {
+
+                a {
+                    text-decoration: none;
+                    color: $whiteGrey;
+
+                    &:hover, &:focus {
+                        text-decoration: underline;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

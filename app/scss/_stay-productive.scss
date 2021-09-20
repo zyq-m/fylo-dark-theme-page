@@ -1,0 +1,61 @@
+.stay-productive {
+    max-width: 30rem;
+    margin: auto;
+    padding: 0 $p-x 9.625rem;
+
+    @media (min-width: 62em) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        max-width: 74rem;
+        padding-block: 10rem;
+    }
+
+    .illustration {
+        margin-bottom: 2.5rem;
+    }
+
+    .content-wrapper {
+
+        h3 {
+            font-size: 1.2rem;
+            text-align: center;
+
+            @media (min-width: 62em) {
+                text-align: left;
+                font-size: 2.2rem;
+                max-width: 20ch;
+            }
+        }
+
+        
+        .link {
+            gap: 0.5rem;
+            position: relative;
+            max-width: max-content;
+            
+            a {
+                text-decoration: none;
+                font-size: 0.8rem;
+                font-weight: 400;
+                color: $cyan;
+
+                &:hover, &:focus {
+                    color: $white;
+                }
+
+            }
+            
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -16%;
+                height: 1px;
+                width: 100%;
+                background-color: $cyan;
+            }
+        }
+    } 
+}

@@ -1,0 +1,31 @@
+.section-wrapper {
+    padding: 0 $p-x;
+
+    @media (min-width: 62em) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8rem;
+        padding-top: 0;
+        padding-right: 13rem;
+        padding-left: 13rem;
+    }
+
+    .items {
+        text-align: center;
+        margin-bottom: 5.5rem;
+
+        @media (min-width: 62em) {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            max-width: 22.6rem;
+            margin: auto;
+        }
+    }
+}

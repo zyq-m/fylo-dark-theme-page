@@ -1,0 +1,61 @@
+.intro {
+    position: relative;
+    padding: 2rem 2.18rem 8.18rem;
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        background-image: url(../images/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+        background-color: $darkBlueIntro;
+        height: 23rem;
+
+        @media (min-width: 23.5em) {
+            background-image: url(../images/bg-curvy-desktop.svg);
+            height: 68.8rem;
+        }
+    }
+
+    &__image {
+        margin-bottom: 2.68rem;
+    }
+
+    article {
+        text-align: center;
+        max-width: 25rem;
+        margin: auto;
+
+        @media (min-width: 63em) {
+            max-width: 43.75rem;
+        }
+
+        h1 {
+            font-size: $fs-l;
+
+            @media (min-width: 63em) {
+                font-size: $fs-xl;
+            }
+        }
+
+        p {
+            @media (min-width: 63em) {
+                font-size: $fs-l;
+            }
+        }
+    }
+
+    &__button {
+        width: 12rem;
+        font-size: 0.8rem;
+        @media (min-width: 63em) {
+            font-size: 1.15rem;
+            width: 42%;
+            padding-block: 1.2rem;
+        }
+    }
+}

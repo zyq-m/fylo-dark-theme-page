@@ -4,6 +4,7 @@
     padding: 0 $p-x;
 
     &__box {
+        position: relative;
         background-color: $darkBlueIntro;
         box-shadow: 7px 9px 18px #00000057;
         border-radius: 0.7rem;
@@ -31,13 +32,13 @@
 
     &__form {
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
         padding-top: 1rem;
 
         .email, .submit-button {
             border-radius: 2rem;            
             border: none;
-            padding: 1rem;
+            padding: 1rem 2rem;
         }
 
         .submit-button {
@@ -62,8 +63,23 @@
             }
 
             .submit-button {
-                width: 24%;
+                width: 28%;
             }
+        }
+    }
+
+    .error {
+        position: absolute;
+        top: 13.3rem;
+        left: 3.7rem;
+        font-size: 0.6rem;
+        padding-top: 0.4rem;
+        font-weight: 600;
+        color: #e44848;
+
+        @media (min-width: 62em) {
+            top: unset;
+            left: 6.8rem;
         }
     }
 }

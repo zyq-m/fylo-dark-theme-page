@@ -70,12 +70,17 @@
 
     .error {
         position: absolute;
-        top: 13.3rem;
+        top: 14.4rem;
         left: 3.7rem;
         font-size: 0.6rem;
         padding-top: 0.4rem;
         font-weight: 600;
         color: #e44848;
+
+        @media (min-width: 459px) {
+            top: 13.3rem;
+        }
+
 
         @media (min-width: 62em) {
             top: unset;

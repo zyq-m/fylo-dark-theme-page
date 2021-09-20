@@ -395,6 +395,7 @@ header nav .menu li a:hover, header nav .menu li a:focus {
 }
 
 .signup__box {
+  position: relative;
   background-color: #1c2431;
   -webkit-box-shadow: 7px 9px 18px #00000057;
           box-shadow: 7px 9px 18px #00000057;
@@ -427,14 +428,14 @@ header nav .menu li a:hover, header nav .menu li a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   padding-top: 1rem;
 }
 
 .signup__form .email, .signup__form .submit-button {
   border-radius: 2rem;
   border: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .signup__form .submit-button {
@@ -462,7 +463,24 @@ header nav .menu li a:hover, header nav .menu li a:focus {
     width: 74%;
   }
   .signup__form .submit-button {
-    width: 24%;
+    width: 28%;
+  }
+}
+
+.signup .error {
+  position: absolute;
+  top: 13.3rem;
+  left: 3.7rem;
+  font-size: 0.6rem;
+  padding-top: 0.4rem;
+  font-weight: 600;
+  color: #e44848;
+}
+
+@media (min-width: 62em) {
+  .signup .error {
+    top: unset;
+    left: 6.8rem;
   }
 }
 

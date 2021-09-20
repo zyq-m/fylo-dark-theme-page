@@ -7,13 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="./dist/style.css">
+  <script defer src="app/js/script.js"></script>
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
@@ -150,10 +145,11 @@
     questions, our support team would be happy to help you.
       </p>
 
-      <div class="signup__form flex">
-        <input type="text" placeholder="email@example.com" class="email">
+      <form id="signup" class="signup__form flex" action="#" method="get">
+        <input id="email" type="text" placeholder="email@example.com" class="email">
         <input type="submit" value="Get Started For Free" class="submit-button">
-      </div>
+      </form>
+      <div class="error"></div>
     </div>
   </section>
 
